@@ -1729,6 +1729,57 @@ PODS:
     - React-logger (= 0.79.0)
     - React-perflogger (= 0.79.0)
     - React-utils (= 0.79.0)
+  - RNScreens (4.10.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTImage
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNScreens/common (= 4.10.0)
+    - Yoga
+  - RNScreens/common (4.10.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTImage
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNVectorIcons (10.2.0):
     - DoubleConversion
     - glog
@@ -1829,6 +1880,7 @@ DEPENDENCIES:
   - ReactAppDependencyProvider (from `build/generated/ios`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -1978,6 +2030,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   Yoga:
@@ -2054,6 +2108,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: e365be84c6636b639c30133fbf1b0c8be8e95e62
   ReactCodegen: daf57f5314369a4ad607ee77516d45aad03b10d7
   ReactCommon: c07346679f14c0b62ad02b20e18e984da3b575ce
+  RNScreens: c5c07a86e4088ce92f0d3854082250dfa9c61f75
   RNVectorIcons: 0d358eb5b59aa90c8c148e745edd3161d49eb6c5
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 9773f1327b258fa449988c2e42fbb7cbdf655d96
