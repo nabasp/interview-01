@@ -22,7 +22,8 @@
     "react-native-paper": "^5.13.1",
     "react-native-safe-area-context": "^5.4.0",
     "react-native-screens": "^4.10.0",
-    "react-native-vector-icons": "^10.2.0"
+    "react-native-vector-icons": "^10.2.0",
+    "use-latest-callback": "^0.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -43,6 +44,9 @@
     "prettier": "2.8.8",
     "react-test-renderer": "19.0.0",
     "typescript": "5.0.4"
+  },
+  "overrides": {
+    "use-latest-callback": "^0.2.3"
   },
   "engines": {
     "node": ">=18"
