@@ -1,6 +1,6 @@
 export type RootStackParamList = {
   Home: undefined;
-  Details: { trackId?: number; trackName?: string };
+  Details: AlbumType;
 };
 export interface AlbumType {
   wrapperType?: string;
