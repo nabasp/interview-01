@@ -8,11 +8,12 @@ export const AlbumCard: React.FC<AlbumType> = ({
   trackName,
   artistName,
   artworkUrl100,
+  ...restProps
 }) => {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const handlePress = () => {
-    navigation.navigate("Details", { trackId, trackName });
+    navigation.navigate("Details", { trackId, ...restProps });
   };
 
   return (
