@@ -3,22 +3,13 @@ import { View, Text, StyleSheet } from "react-native";
 import { useQuery } from "@tanstack/react-query";
 import { AlbumList } from "../components/Album";
 import { Searchbar } from "react-native-paper";
-import { AlbumType, useDebounce } from "../common";
-
-type SearchTerm = string;
-const DEBOUNCE_DELAY = 500;
-
-async function getAlbums(term: SearchTerm): Promise<AlbumType[]> {
-  if (!term.length) {
-    return [];
-  }
-  return await fetch(`https://itunes.apple.com/search?term=${term}`)
-    .then((response) => response.json())
-    .then((json) => json.results);
-}
+import { AlbumType } from "../common";
+import { getAlbums } from "../api/albumApi";
+import { useDebounce } from "../hooks/useDebounce";
+import { DEBOUNCE_DELAY } from "../common/constants";
 
 const HomeScreen: React.FC = () => {
-  const [filter, setFilter] = useState<SearchTerm>("jack johnson");
+  const [filter, setFilter] = useState<string>("jack johnson");
   const debouncedQuery = useDebounce(filter, DEBOUNCE_DELAY);
   const { data, error, isLoading } = useQuery<AlbumType[], Error>({
     queryKey: ["albums", debouncedQuery],
