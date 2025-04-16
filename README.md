@@ -1,3 +1,17 @@
+# Sample Screen
+
+Below is a screenshot of the app running on an iOS Simulator:
+
+<img width="375" alt="Screenshot 2025-04-16 at 12 51 09 PM" src="https://github.com/user-attachments/assets/74abcce0-aac0-4436-b56e-8a0dbfddaa2b" />
+<img width="375" alt="Screenshot 2025-04-16 at 12 50 07 PM" src="https://github.com/user-attachments/assets/87e1c9e9-4d9f-4599-8843-83b773139ed2" />
+<img width="375" alt="Screenshot 2025-04-16 at 12 51 26 PM" src="https://github.com/user-attachments/assets/bca30775-03a3-40eb-8823-e9c020da39b7" />
+
+
+
+
+This demonstrates the default screen you see when you first run the app after following the setup instructions.
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
