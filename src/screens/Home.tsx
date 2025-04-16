@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { useQuery } from "@tanstack/react-query";
 import { AlbumList } from "../components/Album";
-import { Searchbar } from "react-native-paper";
+import { ActivityIndicator, Searchbar } from "react-native-paper";
 import { AlbumType } from "../common";
 import { getAlbums } from "../api/albumApi";
 import { useDebounce } from "../hooks/useDebounce";
@@ -27,7 +27,11 @@ const HomeScreen: React.FC = () => {
       />
       {debouncedQuery?.length > 0 ? (
         <>
-          {isLoading && <Text>Loading...</Text>}
+          {isLoading && (
+            <View style={style.ActivityIndicatorContainer}>
+              <ActivityIndicator />
+            </View>
+          )}
           {error && <Text>Error</Text>}
           {data?.length && <AlbumList albums={data} />}
         </>
@@ -42,6 +46,11 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
+  },
+  ActivityIndicatorContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 

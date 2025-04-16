@@ -9,11 +9,12 @@ import { QueryClient } from "@tanstack/react-query";
 import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
 import { RootStackParamList } from "./src/common";
+import { CASHE_TIME } from "./src/common/constants";
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      gcTime: 1000 * 60 * 60 * 24, // 24 hours cache time
+      gcTime: CASHE_TIME,
     },
   },
 });

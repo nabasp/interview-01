@@ -30,10 +30,10 @@ const AlbumList: React.FC<AlbumListProps> = ({ albums }) => {
 const style = StyleSheet.create({
   container: {
     padding: 10,
-    marginBottom: 10,
   },
   albumContainer: {
     gap: 10,
+    paddingBottom: 20,
   },
 });
 
